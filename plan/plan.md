@@ -105,49 +105,45 @@ The unified pandas DataFrame (staging layer) should have, at minimum, the follow
 
 This DataFrame is the **staging / modeling layer** and acts as the “single source of truth” before loading into the SQL star schema.
 
+## Current Status
+
+- ✅ Step 1 completed: configuration loader module plus canonical YAML files exist. `gastitis.config_loader` validates that every category configured in `config/categories.yaml` matches the expected list and exposes helpers to load category keywords and merchant alias patterns. `tests/test_config_loader.py` guards both success and failure flows and is executed with `uv run --extra dev pytest`.
+- ⏭️ Next steps follow `plan/IMPLEMENTATION_STEPS.md` (database schema work).
+
 ---
 
 ## Categories
 
-I want a **small but expressive category list** that is meaningful for personal finance decisions. For now, the main `category` values will be:
+I want a **small but expressive category list** that is meaningful for personal finance decisions. For now, the main `category` values will be for now (but to be increased):
 
-- `Housing`  
-  Rent, community fees, home insurance.
+```yaml
+- Casa
+- Luz
+- Prepaga
+- Internet
+- Alquiler
+- Seguro
+- Gasolina
+- Furgo
+- Romi
+- Pitu
+- Mercado
+- Farmacia
+- Comer Afuera
+- Transporte
+- Ocio
+- Viaje
+- Ingresos
+- Otros
+- Ropa
+- Transferencia
+- IA
+- Amazon
+```
 
-- `Utilities`  
-  Electricity, water, gas, internet, phone.
-
-- `Groceries`  
-  Supermarkets and regular food shopping (Lidl, Mercadona, Carrefour, etc.).
-
-- `EatingOut`  
-  Restaurants, bars, cafes, take-away, delivery.
-
-- `Transport`  
-  Public transport, fuel, taxis, trains, buses.
-
-- `Health`  
-  Pharmacy, doctors, health insurance, therapy.
-
-- `Leisure`  
-  Cinema, hobbies, entertainment, streaming services, books.
-
-- `Shopping`  
-  Clothes, electronics, non-grocery shopping.
-
-- `Travel`  
-  Hotels, flights, trips, holiday-related spending.
-
-- `Financial`  
-  Bank fees, commissions, interests, financial charges.
-
-- `Income`  
-  Salary, refunds, reimbursements, any positive cash inflows.
-
-- `Other`  
-  Anything that doesn’t clearly fit the above (temporary bucket until I create a better category).
 
 These will be configured via a YAML file (`config/categories.yaml`) with keywords per category and can be refined over time.
+The loader in `src/gastitis/config_loader.py` enforces this list so any addition/removal must update both the YAML and the helper module/tests.
 
 ---
 

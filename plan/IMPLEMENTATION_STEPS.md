@@ -20,27 +20,6 @@ Create the configuration management system to load and validate category definit
 ### Key Implementation Requirements
 
 **categories.yaml structure**:
-```yaml
-Housing:
-  keywords:
-    - "alquiler"
-    - "rent"
-    - "marta sanz"
-  
-Utilities:
-  keywords:
-    - "endesa"
-    - "electricidad"
-    - "agua"
-    
-Groceries:
-  keywords:
-    - "alcampo"
-    - "lidl"
-    - "mercadona"
-
-# ... continue for all categories from plan.md
-```
 
 **merchant_aliases.yaml structure**:
 ```yaml

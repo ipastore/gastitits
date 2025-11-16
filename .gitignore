@@ -61,3 +61,5 @@ venv.bak/
 .vscode/
 
 AGENTS.md
+data_raw/
+data_processed/

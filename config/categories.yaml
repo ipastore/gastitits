@@ -1,23 +1,78 @@
-- Casa
-- Luz
-- Prepaga
-- Internet
-- Alquiler
-- Seguro
-- Gasolina
-- Furgo
-- Romi
-- Pitu
-- Mercado
-- Farmacia
-- Comer Afuera
-- Transporte
-- Ocio
-- Viaje
-- Ingresos
-- Otros
-- Ropa
-- Transferencia
-- IA
-- Amazon
-
+Casa:
+  keywords:
+    - "DANIEL LOPEZ"
+    - "TINTORERIA"
+Luz:
+  keywords:
+    - "ENDESA"
+Prepaga:
+  keywords:
+    - "AEGON"
+Internet:
+  keywords:
+    - "DIGI"
+Alquiler:
+  keywords:
+    - "MARTA SANZ"
+    - "ALQUILER"
+Seguro:
+  keywords:
+    - "ALLIANZ"
+Gasolina:
+  keywords:
+    - "CIA GRAL"
+    - "GRAL NAFTE"
+    - "GASOLINA"
+Furgo:
+  keywords:
+    - "ITV"
+Romi:
+  keywords:
+    - "ROMI"
+Pitu:
+  keywords:
+    - "PITU"
+Mercado:
+  keywords:
+    - "MERCADONA"
+    - "LIDL"
+    - "ALCAMPO UTRILLAS"
+    - "ALCAMPO ZARA"
+Farmacia:
+  keywords:
+    - "PHARMACY"
+    - "FAMRACIA"
+Comer Afuera:
+  keywords:
+    - "CAFFE"
+    - "COFFE"
+    - "CAFE"
+    - "OVERPANI"
+    - "LATERAL"
+    - "PANISHOP"
+Transporte:
+  keywords:
+    - "VUELING"
+Ocio:
+  keywords:
+    - "CINE"
+Viaje:
+  keywords:
+    - "MSC CRUISES"
+Ingresos:
+  keywords:
+    - "TRANSFERENCIA DE PIERRE IANNI"
+Otros:
+  keywords:
+    - "LIC.795"
+Ropa:
+  keywords: []
+Transferencia:
+  keywords:
+    - "DELFINA MATHE"
+IA:
+  keywords:
+    - "OPENAI"
+Amazon:
+  keywords:
+    - "AMAZON"

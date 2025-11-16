@@ -1,12 +1,22 @@
 LIDL:
   patterns:
     - "lidl"
+    - "li dl"
 MERCADONA:
   patterns:
     - "mercadona"
+    - "mercadona s.a"
+ALCAMPO:
+  patterns:
+    - "alcampo"
+    - "alcampo utrillas"
+    - "alcampo zara"
 AMAZON:
   patterns:
     - "amazon"
+    - "amzn mktp"
 REPSOL:
   patterns:
     - "repsol"
+    - "cia gral"
+    - "gral nafte"
