@@ -1,0 +1,44 @@
+[project]
+name = "gastitis"
+version = "0.1.0"
+description = "ETL pipeline to unify home banking CSVs into a Tableau-ready dataset."
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+authors = [
+  { name = "Ignacio Pastore Benaim ", email = "ignaciopastorebenaim@gmail.com" }
+]
+license = { text = "MIT" }
+
+dependencies = [
+  "pandas>=2.2.0",
+  "pyyaml>=6.0.0",
+  "python-dateutil>=2.9.0",
+  "pyarrow>=17.0.0",
+  "typer>=0.12.0"
+]
+
+[project.optional-dependencies]
+dev = [
+  "black>=24.0.0",
+  "ruff>=0.5.0",
+  "pytest>=8.0.0",
+  "ipykernel>=6.29.0",
+  "flake8",
+  "isort",
+  "parameterized"
+]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.typer]
+# Optional: if you add a CLI entry point later,
+# you can configure it here or via [project.scripts]
+
+[tool.isort]
+profile = "black"
+extend_skip = ["plan", "data_raw", "data_processed", ".venv"]

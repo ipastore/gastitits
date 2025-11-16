@@ -1,0 +1,12 @@
+LIDL:
+  patterns:
+    - "lidl"
+MERCADONA:
+  patterns:
+    - "mercadona"
+AMAZON:
+  patterns:
+    - "amazon"
+REPSOL:
+  patterns:
+    - "repsol"
